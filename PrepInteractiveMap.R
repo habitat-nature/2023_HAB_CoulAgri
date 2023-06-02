@@ -5,7 +5,8 @@
 #date: 20230310
 #author: Kyle T. Martins & Noemie Lacroix-D. 
 
-#Objective: compile data for data package for the ECCC project
+# Objective: compile data for the coulees agricole interactive map on the 
+# website
 
 ####LOAD LIBRARIES####
 library(sf)
@@ -19,15 +20,14 @@ pathDataECCC <- paste0("G:/Shared drives/Projets/Actif/2022_ECCC_CoulAgri_003/",
                      "3-Analyses/1-Data/")
 pathDataJDLT <- paste0("G:/Shared drives/Projets/Actif/2022_JDT_DemForet/",
                      "3-Analyses/1-Data/")
-pathOutput <- paste0("G:/My Drive/Github/2023_HAB_CagPrio/")
+pathOutput <- paste0("G:/My Drive/Github/2023_HAB_CoulAgri/")
 
 
 ####LOAD THE DATA####
 # Coulees agricoles delimitations
-cag_east <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/BTSL_East/cagFinal_inBTSL.shp"),
-                     quiet = T)
-cag_west <- st_read(paste0(pathDataECCC, "CouleesAgricoles/cagFinal.shp"),
-                     quiet = T)
+cag_east <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/BTSL_East/coulees_agricoles.shp"))
+cag_west <- st_read(paste0(pathDataECCC, "CouleesAgricoles/coulees_agricoles.shp"))
+cag_sag <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/Saguenay/coulees_agricoles.shp"))
 
 #Soil data 
 soil_west <- read.csv(paste0(pathDataECCC, "Soils/cag_ProprietesSol.csv"))
