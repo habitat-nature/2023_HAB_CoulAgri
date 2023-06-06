@@ -71,7 +71,9 @@ prio_sag$ID <- paste0("03", prio_sag$ID)
 # Coulees agricoles
 cag_shp <- rbind(cag_east[, c("ID")], cag_west[, c("ID")], cag_sag[, c("ID")])
 cag_df <- rbind.fill(cag_east, cag_west, cag_sag)
-cag_combined <- cag_shp %>% left_join(cag_df)
+cag_combined <- cag_shp %>% 
+  left_join(cag_df, by = "ID") %>%
+  mutate(priorite = priorite * 100)
 
 head(cag_combined)
 unique(cag_combined$ID) %>% length ; nrow(cag_combined)
@@ -80,7 +82,9 @@ class(cag_combined)
 # Priorities
 prio_shp <- rbind(prio_east[, c("ID")], prio_west[, c("ID")], prio_sag[, c("ID")])
 prio_df <- rbind.fill(prio_east, prio_west, prio_sag)
-prio_combined <- prio_shp %>% left_join(prio_df)
+prio_combined <- prio_shp %>% 
+  left_join(prio_df, by = "ID") %>%
+  mutate(priorite = priorite * 100)
 
 head(prio_combined)
 unique(prio_combined$ID) %>% length ; nrow(prio_combined)
@@ -108,22 +112,22 @@ mrc_combined <- mrc %>%
 ####EXPORT DATA####
 st_write(cag_combined, 
          paste0(pathOutput, "CoulAgri_coulees.shp"), 
-         quiet = TRUE,
+         layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
 st_write(prio_combined, 
          paste0(pathOutput, "CoulAgri_priorisation.shp"), 
-         quiet = TRUE,
+         layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
 st_write(admin_combined,
          paste0(pathOutput, "CoulAgri_adminRegion.shp"), 
-         quiet = TRUE,
+         layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
 st_write(mrc_combined,
          paste0(pathOutput, "CoulAgri_mrc.shp"), 
-         quiet = TRUE,
+         layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
 #End of script#
