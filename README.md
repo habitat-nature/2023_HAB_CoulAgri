@@ -3,5 +3,9 @@ Dataset used for constructing the interactive map of coulées agricoles and prio
 
 Here is a short description of the different files : \
 **CoulAgri_adminRegion.zip** : Administrative regions covered by study regions. \
-**CoulAgri_coulees.zip** : Coulees agricoles delimitations. Also contains ID, superficy of each coulees and information on slope, soil properties and vegetation cover. \
+**CoulAgri_coulees.zip** : Coulees agricoles delimitations. Also contains ID, superficy of each coulees and information on slope, soil properties and vegetation cover. Coulees agricoles are defined as fallows located in agricultural zoning, with a non-linear shape, an average slope superior to 15% and a superficy of low vegetation of at least 0.15 hectares.\
+**CoulAgri_mrc.zip** : MRC covered by study regions. \
+**CoulAgri_priorisation.zip** : Prioritization results. 
+
+Note that not all file columns are displayed in the map. 
 
