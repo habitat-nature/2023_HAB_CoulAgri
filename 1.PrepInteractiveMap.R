@@ -70,10 +70,14 @@ prio_sag$ID <- paste0("03", prio_sag$ID)
 ## 3. Merge layers together
 # Coulees agricoles
 cag_shp <- rbind(cag_east[, c("ID")], cag_west[, c("ID")], cag_sag[, c("ID")])
-cag_df <- rbind.fill(cag_east, cag_west, cag_sag)
+
+cag_df <- rbind.fill(cag_east, cag_west, cag_sag) %>%
+  dplyr::select(-geometry)
+
 cag_combined <- cag_shp %>% 
   left_join(cag_df, by = "ID") %>%
-  mutate(priorite = priorite * 100)
+  mutate(priorite = priorite * 100,
+         selct_prio = ifelse(selct_prio == 1, "Oui", "Non"))
 
 head(cag_combined)
 unique(cag_combined$ID) %>% length ; nrow(cag_combined)
@@ -81,7 +85,10 @@ class(cag_combined)
 
 # Priorities
 prio_shp <- rbind(prio_east[, c("ID")], prio_west[, c("ID")], prio_sag[, c("ID")])
-prio_df <- rbind.fill(prio_east, prio_west, prio_sag)
+
+prio_df <- rbind.fill(prio_east, prio_west, prio_sag) %>%
+  dplyr::select(-geometry)
+
 prio_combined <- prio_shp %>% 
   left_join(prio_df, by = "ID") %>%
   mutate(priorite = priorite * 100)
