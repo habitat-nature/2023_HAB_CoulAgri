@@ -107,22 +107,22 @@ mrc_combined <- mrc %>%
 
 ####EXPORT DATA####
 st_write(cag_combined, 
-         paste0(pathOutput, "coulees_agricoles.shp"), 
+         paste0(pathOutput, "CoulAgri_coulees.shp"), 
          quiet = TRUE,
          delete_layer = TRUE)
 
 st_write(prio_combined, 
-         paste0(pathOutput, "priorisation.shp"), 
+         paste0(pathOutput, "CoulAgri_priorisation.shp"), 
          quiet = TRUE,
          delete_layer = TRUE)
 
 st_write(admin_combined,
-         paste0(pathOutput, "admin_region.shp"), 
+         paste0(pathOutput, "CoulAgri_adminRegion.shp"), 
          quiet = TRUE,
          delete_layer = TRUE)
 
 st_write(mrc_combined,
-         paste0(pathOutput, "mrc.shp"), 
+         paste0(pathOutput, "CoulAgri_mrc.shp"), 
          quiet = TRUE,
          delete_layer = TRUE)
 
