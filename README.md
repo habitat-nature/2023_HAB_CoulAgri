@@ -3,6 +3,7 @@
 Ensemble de données utilisées pour développer la carte interactive des coulées agricoles et résultats de la priorisation, tels qu'affichés sur le site web via Cartodb. Les données et la méthodologie proviennent des projets suivants : 
 - Demain la Forêt, en partenariat avec le Jour de la Terre Canada ;
 - Priorisation des coulées agricoles des Basses-Terres du Saint-Laurent à restaurer pour rétablir la connectivité écologique, financé par ECCC.
+
 Les régions à l'étude sont les basses terres du Saint-Laurent et la MRC du Saguenay Lac-Saint-Jean. 
 
 Voici une brève description des différents fichiers :
