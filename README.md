@@ -7,12 +7,15 @@ Ensemble de données utilisées pour développer la carte interactive des coulé
 Les régions à l'étude sont les basses terres du Saint-Laurent et la MRC du Saguenay Lac-Saint-Jean. 
 
 Voici une brève description des différents fichiers :
+
 **PrepInteractiveMap.R** : Script utilisé pour consolider et fusionner les données de différents projets.
+
 **CoulAgri_adminRegion.zip** : Régions administratives couvertes par les régions d'étude. Contient le nom et le code de chaque région administrative.
-**CoulAgri_coulees.zip** : Coulées agricoles délimitées. Contient également l'ID, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des jachères situées dans un zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une faible superficie de végétation d'au moins 0,15 hectare. Notez que certaines colonnes ont des valeurs NA en fonction de la région d'intérêt. Exemple : Nous n'avons pas extrait les propriétés du sol pour la MRC du Saguenay Lac-Saint-Jean. Les valeurs de ces colonnes sont donc manquantes pour les coulées agricoles de cette région.
-**CoulAgri_mrc.zip** : MRC couvertes par les régions d'étude. Contient le nom et le code de chaque MRC.
-**CoulAgri_priorisation.zip** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont mentionnés dans Metadonnees.pdf. Nous n'avons pas utilisé les mêmes critères pour toutes les régions étudiées. Exemple : Il n'y avait pas d'espèces forestières menacées au Saguenay Lac-Saint-Jean, donc nous n'avons pas inclus ce critère dans la priorisation.
-**Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_adminRegion.zip et CoulAgri_coulees.zip.
+
+**CoulAgri_coulees.zip** : Coulées agricoles délimitées. Contient également l'ID, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des jachères situées dans un zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une faible superficie de végétation d'au moins 0,15 hectare. Notez que certaines colonnes ont des valeurs NA en fonction de la région d'intérêt. Exemple : Nous n'avons pas extrait les propriétés du sol pour la MRC du Saguenay Lac-Saint-Jean. Les valeurs de ces colonnes sont donc manquantes pour les coulées agricoles de cette région.   
+**CoulAgri_mrc.zip** : MRC couvertes par les régions d'étude. Contient le nom et le code de chaque MRC.   
+**CoulAgri_priorisation.zip** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont mentionnés dans Metadonnees.pdf. Nous n'avons pas utilisé les mêmes critères pour toutes les régions étudiées. Exemple : Il n'y avait pas d'espèces forestières menacées au Saguenay Lac-Saint-Jean, donc nous n'avons pas inclus ce critère dans la priorisation.   
+**Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_adminRegion.zip et CoulAgri_coulees.zip.   
 
 Notez que toutes les colonnes des fichiers ne sont pas affichées dans la carte.
 
