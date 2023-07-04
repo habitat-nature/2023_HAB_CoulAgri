@@ -18,7 +18,11 @@ Voici une brève description des différents fichiers :
 
 **CoulAgri_priorisation.zip** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont mentionnés dans Metadonnees.pdf. Nous n'avons pas utilisé les mêmes critères pour toutes les régions étudiées. Exemple : Il n'y avait pas d'espèces forestières menacées au Saguenay Lac-Saint-Jean, donc nous n'avons pas inclus ce critère dans la priorisation.
 
-**Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_adminRegion.zip et CoulAgri_coulees.zip.   
+**Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_adminRegion.zip et CoulAgri_coulees.zip.  
+
+**recommandations.xlsx** :  Document contenant différentes pratiques et aménagements pouvant être mobilisées dans les coulées agricoles dans le but de favoriser la présence de certaines espèces champêtres ou forestières. Les espèces sélectionnées pour cette revue de littérature ont été jugées comme étant prioritaires dans les Basses-Terres du Saint-Laurent par nos collaborateurs et collaboratrices de ECCC.
+
+
 
 *Notez que toutes les colonnes des fichiers ne sont pas affichées dans la carte.*
 
@@ -43,5 +47,7 @@ Here is a short description of the different files :
 **CoulAgri_priorisation.zip** : Prioritization results. The different criteria used in the prioritizations are mentioned in Metadonnees.pdf. We didn't use the same criteria for every study regions. Example : There were no occurrences of forest threatened species in Saguenay Lac-Saint-Jean, so we didn't include this criteria in the priorization.
 
 **Metadonnees.pdf** : Pdf containing columns description of CoulAgri_adminRegion.zip and CoulAgri_coulees.zip files.
+
+**recommandations.xlsx** :  Document containing udifferent practices that can be used in agricultural wastelands in order to promote the presence of certain rural or forest species. The species selected for this literature review were deemed to be priorities in the St. Lawrence Lowlands by our ECCC collaborators.
 
 *Note that not all file columns are displayed in the map.*
