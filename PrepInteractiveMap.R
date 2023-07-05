@@ -30,7 +30,7 @@ sag_delim <- st_read(paste0(pathDataJDLT, "StudyRegion/delim_SAG.shp"))
 # Coulees agricoles delimitations
 cag_east <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/BTSL_East/coulees_agricoles.shp"))
 cag_west <- st_read(paste0(pathDataECCC, "CouleesAgricoles/coulees_agricoles.shp"))
-cag_sag <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/Saguenay/coulees_agricoles.shp"))
+cag_qc <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/South_QC/coulees_agricoles.shp"))
 
 # Prioritization results 
 prio_west <- st_read(paste0(pathDataECCC, "Priorities/prio_bois.shp"))
