@@ -28,26 +28,26 @@ Voici une brève description des différents fichiers :
 
 -----
 
-Dataset used for constructing the interactive map of coulées agricoles and prioritization results, as displayed through Cartodb on the website. The data and methodology come from the following projects : 
+Source data used for the  interactive map showing where coulées agricoles are located and how to prioritize them for restoration, as displayed using Cartodb on the Habitat website. The data and methodology are described in the documentation for the following projects: 
 - Demain la Forêt, in partenership with Jour de la Terre Canada ;
-- Priorization of the coulees agricoles in the St.Lawrence Lowlands for restauration to re-establish ecological connectivity, funded by ECCC.
+- Priorisation des coulées agricoles des Basses-Terres du Saint-Laurent à restaurer pour rétablir la connectivité écologique, funded by ECCC.
 
-The study regions are the St. Lawrence Lowlands and the MRC of Saguenay Lac-Saint-Jean.
+The analysis focused on two study regions including the St. Lawrence Lowlands and the Saguenay Lac-Saint-Jean regional municipal county.
 
-Here is a short description of the different files :
+Here is a short description of the different files:
 
-**PrepInteractiveMap.R** : Script used to consolidate and merge data from different projects.
+**PrepInteractiveMap.R** : Script used to consolidate and merge data from different projects for integration into the interactive map.
 
-**CoulAgri_adminRegion.zip** : Administrative regions covered by study regions. Contains name and code of each administrative region.
+**CoulAgri_adminRegion.zip** : The zip file includes shapefiles of the administrative regions within each study region, along with the respective names and codes for each region.
 
-**CoulAgri_coulees.zip** : Coulees agricoles delimitations. Also contains ID, superficy of each coulees and information on slope, soil properties and vegetation cover. Coulees agricoles are defined as fallows located in agricultural zoning, with a non-linear shape, an average slope superior to 15% and a low vegetation superficy of at least 0.15 hectares. Note that some columns have NA values depending on the region of interest. Example : We didn't extract soil properties for the MRC Saguenay Lac-Saint-Jean so the values in those columns are missing for coulées agricoles in this region.
+**CoulAgri_coulees.zip** : The provided zip file contains a shapefile delineating coulées agricoles. Within the attribute tables of the shapefile, you will find comprehensive information regarding each coulée agricole, including a unique ID, surface area, slope, soil characteristics, and vegetation cover. Coulées agricoles are defined as fallow land situated in agriculturally zoned areas, featuring a non-linear shape and an average slope exceeding 15%. Additionally, these areas are characterized by a minimum coverage of 0.15 ha of low vegetation. It's important to note that certain columns within the attribute table may contain NA values depending on the specific region of interest. For example, soil properties for the Saguenay Lac-Saint-Jean regional municipal county were not extracted, resulting in missing values within columns with soil property information for coulées agricoles in this particular region.
 
-**CoulAgri_mrc.zip** : MRC covered by study regions. Contains name and code of each MRC.
+**CoulAgri_mrc.zip** : Regional municipal counties covered by study regions. Contains the names and codes of each regional municipal county.
 
-**CoulAgri_priorisation.zip** : Prioritization results. The different criteria used in the prioritizations are mentioned in Metadonnees.pdf. We didn't use the same criteria for every study regions. Example : There were no occurrences of forest threatened species in Saguenay Lac-Saint-Jean, so we didn't include this criteria in the priorization.
+**CoulAgri_priorisation.zip** :Prioritization results are available, with details on the various criteria used, listed in the Metadonnees.pdf file. Different sets of criteria were employed to rank coulées agricoles in each study region. For instance, in Saguenay Lac-Saint-Jean, the criteria regarding occurrences of forest threatened species were excluded from the prioritization due to their absence in the region.
 
-**Metadonnees.pdf** : Pdf containing columns description of CoulAgri_adminRegion.zip and CoulAgri_coulees.zip files.
+**Metadonnees.pdf** : Pdf containing column descriptions for CoulAgri_adminRegion.zip and CoulAgri_coulees.zip.
 
-**recommandations.xlsx** :  Document containing udifferent practices that can be used in agricultural wastelands in order to promote the presence of certain rural or forest species. The species selected for this literature review were deemed to be priorities in the St. Lawrence Lowlands by our ECCC collaborators.
+**recommandations.xlsx** :  The provided document outlines a range of practices applicable to agricultural wastelands, aiming to enhance the presence of specific rural or forest species. These species were identified as being of high priority  i the St. Lawrence Lowlands, based on the assessment conducted in collaboration with our partners at ECCC.
 
-*Note that not all file columns are displayed in the map.*
+*Note that some columns included in the different files are not displayed on the map.*
