@@ -50,8 +50,10 @@ st_crs(cag_east) == st_crs(prio_qc)
 st_crs(cag_east) == st_crs(admin_reg)
 st_crs(cag_east) == st_crs(mrc)
 
-admin_reg <- st_transform(admin_reg, crs = st_crs(cag_east))
-mrc <- st_transform(mrc, crs = st_crs(cag_east))
+admin_reg <- st_transform(admin_reg, crs = st_crs(cag_east)) %>%
+  dplyr::select(REG_NOM = RES_NM_REG)
+mrc <- st_transform(mrc, crs = st_crs(cag_east)) %>% 
+  dplyr::select(MRC_NOM = MRS_NM_MRC)
 
 ## 2. Transform ID because some are duplicated
 cag_east$ID <- paste0("01", cag_east$ID)
@@ -93,19 +95,19 @@ class(prio_combined)
 
 ## 4. Add mrc and admin region info
 cag_reg_df <- cag_combined %>% 
-  st_intersection(admin_reg[,c("RES_NM_REG")]) %>% 
-  st_intersection(mrc[,c("MRS_NM_MRC")]) %>% 
+  st_intersection(admin_reg) %>% 
+  st_intersection(mrc) %>% 
   data.frame %>% 
-  dplyr::select(ID, REG_NOM = RES_NM_REG, MRC_NOM = MRS_NM_MRC)
+  dplyr::select(ID, REG_NOM, MRC_NOM)
 summary(cag_reg_df$ID %in% cag_combined$ID)
 cag_final <- left_join(cag_combined, cag_reg_df)
 head(cag_final)
 
 prio_reg_df <- prio_combined %>% 
-  st_intersection(admin_reg[,c("RES_NM_REG")]) %>% 
-  st_intersection(mrc[,c("MRS_NM_MRC")]) %>% 
+  st_intersection(admin_reg) %>% 
+  st_intersection(mrc) %>% 
   data.frame %>% 
-  dplyr::select(ID, REG_NOM = RES_NM_REG, MRC_NOM = MRS_NM_MRC)
+  dplyr::select(ID, REG_NOM, MRC_NOM)
 summary(prio_reg_df$ID %in% prio_combined$ID)
 prio_final <- left_join(prio_combined, prio_reg_df)
 head(cag_final)
