@@ -125,7 +125,7 @@ mrc_names <- unique(cag_final$MRC_NOM)
 
 for(i in mrc_names){
   # Create folder if non existent and set working directory
-  temp_dir <- paste0(pathOutput, "MRC_data/", i)
+  temp_dir <- paste0(pathOutput, "MRC_donnees/", i)
   if (file.exists(temp_dir)){
     setwd(temp_dir)
   } else {
