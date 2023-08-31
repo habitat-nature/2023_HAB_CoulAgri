@@ -1,6 +1,6 @@
 # 2023_HAB_CoulAgri
 
-Ensemble de données utilisées pour développer la carte interactive des coulées agricoles et résultats de la priorisation, tels qu'affichés sur le site web via Cartodb. Les données et la méthodologie proviennent des projets suivants : 
+Ensemble de données utilisées pour développer la carte interactive des coulées agricoles et des résultats de la priorisation, tels qu'affichés sur le site web via Cartodb. Les données et la méthodologie proviennent des projets suivants : 
 - Demain la Forêt, en partenariat avec le Jour de la Terre Canada ;
 - Priorisation des coulées agricoles des Basses-Terres du Saint-Laurent à restaurer pour rétablir la connectivité écologique, financé par ECCC.
 
