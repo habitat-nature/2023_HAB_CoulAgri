@@ -41,7 +41,8 @@ mrc <- st_read(paste0(pathAdminReg, "mrc/mrc_s.shp"))
 
 
 ####DATA PROCESSING####
-## 1. Check crs of different layers
+## 1. Prep data
+# Check if crs are matching
 st_crs(cag_east) == st_crs(cag_west)
 st_crs(cag_east) == st_crs(cag_qc)
 st_crs(cag_east) == st_crs(prio_west)
@@ -50,10 +51,11 @@ st_crs(cag_east) == st_crs(prio_qc)
 st_crs(cag_east) == st_crs(admin_reg)
 st_crs(cag_east) == st_crs(mrc)
 
+# Change crs as needed 
 admin_reg <- st_transform(admin_reg, crs = st_crs(cag_east)) %>%
-  dplyr::select(REG_NOM = RES_NM_REG)
+  dplyr::select(REG_NOM = RES_NM_REG, REG_CODE = RES_CO_REG)
 mrc <- st_transform(mrc, crs = st_crs(cag_east)) %>% 
-  dplyr::select(MRC_NOM = MRS_NM_MRC)
+  dplyr::select(MRC_NOM = MRS_NM_MRC, MRC_CODE = MRS_CO_MRC)
 
 ## 2. Transform ID because some are duplicated
 cag_east$ID <- paste0("01", cag_east$ID)
