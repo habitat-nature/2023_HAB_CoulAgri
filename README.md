@@ -14,7 +14,7 @@ Voici une brève description des différents fichiers :
 
 **CoulAgri_coulees.zip** : Coulées agricoles délimitées. Contient également l'ID, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des jachères situées dans un zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une faible superficie de végétation d'au moins 0,15 hectare. Notez que certaines colonnes ont des valeurs NA en fonction de la région d'intérêt. Exemple : Nous n'avons pas extrait les propriétés du sol pour la MRC du Saguenay Lac-Saint-Jean. Les valeurs de ces colonnes sont donc manquantes pour les coulées agricoles de cette région.
 
-**CoulAgri_mrc.zip** : MRC couvertes par les régions d'étude. Contient le nom et le code de chaque MRC.
+**CoulAgri_mrc.zip** : MRC couvertes par les régions d'étude. Contient le nom et le code de chaque MRC, ainsi que le code et le nom de la région administrative dans laquelle la MRC se trouve. 
 
 **CoulAgri_priorisation.zip** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont mentionnés dans Metadonnees.pdf. Nous n'avons pas utilisé les mêmes critères pour toutes les régions étudiées. Exemple : Il n'y avait pas d'espèces forestières menacées au Saguenay Lac-Saint-Jean, donc nous n'avons pas inclus ce critère dans la priorisation.
 
@@ -42,7 +42,7 @@ Here is a short description of the different files:
 
 **CoulAgri_coulees.zip** : The provided zip file contains a shapefile delineating coulées agricoles. Within the attribute tables of the shapefile, you will find comprehensive information regarding each coulée agricole, including a unique ID, surface area, slope, soil characteristics, and vegetation cover. Coulées agricoles are defined as fallow land situated in agriculturally zoned areas, featuring a non-linear shape and an average slope exceeding 15%. Additionally, these areas are characterized by a minimum coverage of 0.15 ha of low vegetation. It's important to note that certain columns within the attribute table may contain NA values depending on the specific region of interest. For example, soil properties for the Saguenay Lac-Saint-Jean regional municipal county were not extracted, resulting in missing values within columns with soil property information for coulées agricoles in this particular region.
 
-**CoulAgri_mrc.zip** : Regional municipal counties covered by study regions. Contains the names and codes of each regional municipal county.
+**CoulAgri_mrc.zip** : Regional municipal counties covered by study regions. Contains the names and codes of each regional municipal county. Also containt the names and the codes of the administratives regions in which the regional municipality counties are located. 
 
 **CoulAgri_priorisation.zip** :Prioritization results are available, with details on the various criteria used, listed in the Metadonnees.pdf file. Different sets of criteria were employed to rank coulées agricoles in each study region. For instance, in Saguenay Lac-Saint-Jean, the criteria regarding occurrences of forest threatened species were excluded from the prioritization due to their absence in the region.
 
