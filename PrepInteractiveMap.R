@@ -75,7 +75,7 @@ cag_df <- rbind.fill(cag_east, cag_west, cag_qc) %>%
 
 cag_combined <- cag_shp %>% 
   left_join(cag_df, by = "ID") %>%
-  mutate(priorite = priorite * 100,
+  mutate(priorite = round(priorite * 100, digits = 0),
          selct_prio = ifelse(selct_prio == 1, "Oui", "Non"))
 
 # Priorities
@@ -86,7 +86,7 @@ prio_df <- rbind.fill(prio_east, prio_west, prio_qc) %>%
 
 prio_combined <- prio_shp %>% 
   left_join(prio_df, by = "ID") %>%
-  mutate(priorite = priorite * 100)
+  mutate(priorite = round(priorite * 100, digits = 0))
 
 
 ## 4. Add mrc and admin region info
