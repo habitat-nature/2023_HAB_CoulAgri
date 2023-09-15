@@ -78,6 +78,22 @@ cag_combined <- cag_shp %>%
   mutate(priorite = round(priorite * 100, digits = 0),
          selct_prio = ifelse(selct_prio == 1, "Oui", "Non"))
 
+# Change mean slope into categories (to display in cartoDB)
+range(cag_combined$pnte_mn_p)
+cag_combined <- cag_combined %>% 
+  dplyr::mutate(pnte_cat = ifelse(pnte_mn_p >= 15 & pnte_mn_p < 20, "15-20 %", 
+                           ifelse(pnte_mn_p >= 20 & pnte_mn_p < 25, "20-25 %", 
+                           ifelse(pnte_mn_p >= 25 & pnte_mn_p < 30, "25-30 %", 
+                           ifelse(pnte_mn_p >= 30 & pnte_mn_p < 35, "30-35 %", 
+                           ifelse(pnte_mn_p >= 35 & pnte_mn_p < 40, "35-40 %", 
+                           ifelse(pnte_mn_p >= 40 & pnte_mn_p < 45, "40-45 %", 
+                           ifelse(pnte_mn_p >= 45 & pnte_mn_p < 50, "45-50 %", 
+                           ifelse(pnte_mn_p >= 50, ">50 %", NA))))))))) %>% 
+  dplyr::select(ID, super_m2, super_ha, veg_bas_m2, veg_bas_ha, veg_bas_p, 
+                pnte_mn_p, pnte_cat, everything())
+
+summary(is.na(cag_combined$pnte_cat)) # should all be false
+
 # Priorities
 prio_shp <- rbind(prio_east[, c("ID")], prio_west[, c("ID")], prio_qc[, c("ID")])
 
