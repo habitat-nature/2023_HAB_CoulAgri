@@ -17,9 +17,9 @@ library(plyr)
 
 ####DEFINE PATHS####
 pathAdminReg <- "G:/Shared drives/Database/AdminRegion/QC/"
-pathDataECCC <- paste0("G:/Shared drives/Archive Projets/ECCC/2022_ECCC_CoulAgri_003/3-Analyses/1-Data/")
-pathDataJDLT <- paste0("G:/Shared drives/Projets/Actif/2022_JDT_DemForet/3-Analyses/1-Data/")
-pathOutput <- paste0("G:/My Drive/Github/2023_HAB_CoulAgri/")
+pathDataECCC <- "G:/Shared drives/Archive Projets/ECCC/2022_ECCC_CoulAgri_003/3-Analyses/1-Data/"
+pathDataJDLT <- "G:/Shared drives/Projets/Actif/2022_JDT_DemForet/3-Analyses/1-Data/"
+pathOutput <- "G:/My Drive/Github/2023_HAB_CoulAgri/"
 
 
 ####LOAD THE DATA####
