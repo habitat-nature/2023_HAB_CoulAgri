@@ -26,12 +26,12 @@ pathOutput <- "G:/My Drive/Github/2023_HAB_CoulAgri/"
 # Coulees agricoles delimitations
 cag_east <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/BTSL_East/coulees_agricoles.shp"))
 cag_west <- st_read(paste0(pathDataECCC, "CouleesAgricoles/coulees_agricoles.shp"))
-cag_qc <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/South_QC/coulees_agricoles.shp"))
+cag_qc <- st_read(paste0(pathDataJDLT, "CouleesAgricoles/QC_outBTSL/coulees_agricoles.shp"))
 
 # Prioritization results 
 prio_west <- st_read(paste0(pathDataECCC, "Priorities/prio_bois.shp"))
 prio_east <- st_read(paste0(pathDataJDLT, "Priorities/BTSL_East/prio_bois.shp"))
-prio_qc <- st_read(paste0(pathDataJDLT, "Priorities/South_QC/prio_bois.shp"))
+prio_qc <- st_read(paste0(pathDataJDLT, "Priorities/QC_outBTSL/prio_bois.shp"))
 
 #Administrative regions for the BTSL West and East
 admin_reg <- st_read(paste0(pathAdminReg, "reg_admin/regio_s.shp"))
@@ -165,6 +165,16 @@ st_write(cag_final,
 
 st_write(prio_final, 
          paste0(pathOutput, "CoulAgri_priorisation.shp"), 
+         layer_options = "ENCODING=UTF-8",
+         delete_layer = TRUE)
+
+st_write(cag_final, 
+         paste0(pathDataJDLT, "CouleesAgricoles/QC_ALL/CoulAgri_coulees.shp"), 
+         layer_options = "ENCODING=UTF-8",
+         delete_layer = TRUE)
+
+st_write(prio_final, 
+         paste0(pathDataJDLT, "Priorities/QC_ALL/CoulAgri_priorisation.shp"), 
          layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
