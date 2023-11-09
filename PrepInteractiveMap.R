@@ -168,16 +168,6 @@ st_write(prio_final,
          layer_options = "ENCODING=UTF-8",
          delete_layer = TRUE)
 
-st_write(cag_final, 
-         paste0(pathDataJDLT, "CouleesAgricoles/QC_ALL/CoulAgri_coulees.shp"), 
-         layer_options = "ENCODING=UTF-8",
-         delete_layer = TRUE)
-
-st_write(prio_final, 
-         paste0(pathDataJDLT, "Priorities/QC_ALL/CoulAgri_priorisation.shp"), 
-         layer_options = "ENCODING=UTF-8",
-         delete_layer = TRUE)
-
 st_write(admin_reg,
          paste0(pathOutput, "CoulAgri_adminRegion.shp"), 
          layer_options = "ENCODING=UTF-8",
