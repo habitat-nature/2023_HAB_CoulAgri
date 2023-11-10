@@ -1,8 +1,7 @@
 # 2023_HAB_CoulAgri
 
 Ensemble de données utilisées pour développer la carte interactive des coulées agricoles et des résultats de la priorisation, tels qu'affichés sur le site web via Cartodb. Les données et la méthodologie proviennent des projets suivants : 
-- Demain la Forêt, en partenariat avec le Jour de la Terre Canada ;
-- Priorisation des coulées agricoles des Basses-Terres du Saint-Laurent à restaurer pour rétablir la connectivité écologique, financé par ECCC.
+- Demain la Forêt, en partenariat avec le Jour de la Terre Canada
 
 La région d'étude est le sud du Québec.  
 
@@ -12,7 +11,7 @@ Voici une brève description des différents fichiers :
 
 **CoulAgri_adminRegion.zip** : Régions administratives couvertes par la région d'étude. Contient le nom et le code de chaque région administrative.
 
-**CoulAgri_coulees.zip** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Notez que certaines colonnes ont des valeurs manquantes en fonction de la région d'intérêt. Exemple : nous n'avons pas extrait les propriétés du sol pour les régions en dehors des Basses-Terres du Saint-Laurent. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
+**CoulAgri_coulees.zip** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
 
 **CoulAgri_mrc.zip** : MRC couvertes par la région d'étude. Contient le nom et le code de chaque MRC, ainsi que le code et le nom de la région administrative associée. 
 
@@ -29,8 +28,7 @@ Voici une brève description des différents fichiers :
 -----
 
 Source data used for the  interactive map showing where *coulées agricoles* are located and how to prioritize them for restoration, as displayed using Cartodb on the Habitat website. The data and methodology are described in the documentation for the following projects: 
-- Demain la Forêt, in partenership with Jour de la Terre Canada ;
-- Prioritization of restoration of *coulées agricoles* in St. Lawrence Lowlands in order to restore ecological connectivity, funded by ECCC.
+- Demain la Forêt, in partenership with Jour de la Terre Canada 
 
 The study region is the South of Quebec.
 
@@ -40,7 +38,7 @@ Here is a short description of the different files:
 
 **CoulAgri_adminRegion.zip** : Administrative regions within the study region. Contains the name and code of each administrative region. 
 
-**CoulAgri_coulees.zip** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. It's important to note that certain columns within the attribute table may contain missing values depending based on the study region. For example, soil properties outside of the St.-Lawrence Lowlands were not extracted. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
+**CoulAgri_coulees.zip** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
 
 **CoulAgri_mrc.zip** : Regional municipal counties within the study region. Contains the name and code of each regional municipal county. Also containt the name and the code of the associated administrative region. 
 
