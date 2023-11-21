@@ -35,11 +35,15 @@ mrc <- st_read(paste0(pathAdminReg, "mrc/mrc_s.shp"))
 ####DATA PROCESSING####
 ## 1. Prep data
 # Change crs as needed 
-admin_reg <- st_transform(admin_reg, crs = st_crs(cag_east)) %>%
+admin_reg <- st_transform(admin_reg, crs = st_crs(cag)) %>%
   dplyr::select(REG_NOM = RES_NM_REG, REG_CODE = RES_CO_REG)
-mrc <- st_transform(mrc, crs = st_crs(cag_east)) %>% 
+mrc <- st_transform(mrc, crs = st_crs(cag)) %>% 
   dplyr::select(MRC_NOM = MRS_NM_MRC, MRC_CODE = MRS_CO_MRC,
                 REG_NOM = MRS_NM_REG, REG_CODE = MRS_CO_REG)
+
+# remove watersheds info from prioritization results
+prio <- prio %>% 
+  dplyr::select(-bv_id, -bv_nom, -type_bv)
 
 
 ## 2. Subdivised datasets by MRC 
@@ -56,8 +60,8 @@ for(i in mrc_names){
     setwd(temp_dir)
   }
   # Subset data
-  prio_temp <- prio %>% filter(MRC_NOM == i)
-  cag_temp <- cag %>% filter(MRC_NOM == i)
+  prio_temp <- prio %>% filter(mrc_nom == i)
+  cag_temp <- cag %>% filter(mrc_nom == i)
   # Export data
   st_write(prio_temp, paste0("priorisation_", i, ".shp"), delete_layer = TRUE)
   st_write(cag_temp, paste0("coulees_", i, ".shp"), delete_layer = T)
