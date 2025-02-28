@@ -32,8 +32,6 @@ The study region is the South of Quebec.
 
 Here is a short description of the different files:
 
-**PrepInteractiveMap.R** : Script used to consolidate and merge data from different projects for integration into the interactive map.
-
 **CoulAgri_adminRegion.zip** : Administrative regions within the study region. Contains the name and code of each administrative region. 
 
 **CoulAgri_coulees.zip** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
