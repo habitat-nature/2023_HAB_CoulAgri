@@ -7,8 +7,6 @@ La région d'étude est le sud du Québec.
 
 Voici une brève description des différents fichiers :
 
-**PrepInteractiveMap.R** : Script utilisé pour consolider et fusionner les données de différents projets.
-
 **CoulAgri_adminRegion.zip** : Régions administratives couvertes par la région d'étude. Contient le nom et le code de chaque région administrative.
 
 **CoulAgri_coulees.zip** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
