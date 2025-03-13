@@ -28,13 +28,9 @@ The study region is the South of Quebec.
 
 Here is a short description of the different files:
 
-**CoulAgri_adminRegion.zip** : Administrative regions within the study region. Contains the name and code of each administrative region. 
+**CoulAgri_coulees.shp** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
 
-**CoulAgri_coulees.zip** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
-
-**CoulAgri_mrc.zip** : Regional municipal counties within the study region. Contains the name and code of each regional municipal county. Also containt the name and the code of the associated administrative region. 
-
-**CoulAgri_priorisation.zip** : Prioritization results. The different criteria used in the prioritization are described in the Metadata.pdf file. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
+**CoulAgri_priorisation.shp** : Prioritization results. The different criteria used in the prioritization are described in the Metadata.pdf file. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
 
 **Metadonnees.pdf** : Pdf containing column descriptions for CoulAgri_priorisation.zip and CoulAgri_coulees.zip.
 
