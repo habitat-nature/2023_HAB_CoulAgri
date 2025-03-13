@@ -7,13 +7,9 @@ La région d'étude est le sud du Québec.
 
 Voici une brève description des différents fichiers :
 
-**CoulAgri_adminRegion.zip** : Régions administratives couvertes par la région d'étude. Contient le nom et le code de chaque région administrative.
+**CoulAgri_coulees.shp** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
 
-**CoulAgri_coulees.zip** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
-
-**CoulAgri_mrc.zip** : MRC couvertes par la région d'étude. Contient le nom et le code de chaque MRC, ainsi que le code et le nom de la région administrative associée. 
-
-**CoulAgri_priorisation.zip** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont décrits dans le fichier Metadonnees.pdf. Les résultats de priorisation ont également été subdivisé par MRC et se trouvent dans le dossier *MRC_donnees*
+**CoulAgri_priorisation.shp** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont décrits dans le fichier Metadonnees.pdf. Les résultats de priorisation ont également été subdivisé par MRC et se trouvent dans le dossier *MRC_donnees*
 
 **Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_priorisation.zip et CoulAgri_coulees.zip.  
 
