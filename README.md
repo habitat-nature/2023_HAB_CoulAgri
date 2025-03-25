@@ -7,9 +7,11 @@ La région d'étude est le sud du Québec.
 
 Voici une brève description des différents fichiers :
 
-**CoulAgri_coulees.shp** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
+**CoulAgri_coulees.gpkg** : Délimitation des coulées agricoles. Contient l'identifiant unique, la superficie de chaque coulée et des informations sur la pente, les propriétés du sol et la couverture végétale. Les coulées agricoles sont définies comme des friches situées en zonage agricole, ayant une forme non linéaire, une pente moyenne supérieure à 15 % et une superficie de végétation basse d'au moins 0,15 hectare. Ce jeu de données a également été subdivisé par MRC. Les données se trouvent dans le dossier *MRC_donnees*
 
-**CoulAgri_priorisation.shp** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont décrits dans le fichier Metadonnees.pdf. Les résultats de priorisation ont également été subdivisé par MRC et se trouvent dans le dossier *MRC_donnees*
+**CoulAgri_priorisation.gpkg** : Résultats de la priorisation. Les différents critères utilisés dans les priorisations sont décrits dans le fichier Metadonnees.pdf. Les résultats de priorisation ont également été subdivisé par MRC et se trouvent dans le dossier *MRC_donnees*
+
+**Plantations_DLF.gpkg** : Délimitations des plantations réalisées par Demain la Forêt, ainsi que les bénéfices associés à ces plantations. 
 
 **Metadonnees.pdf** : Pdf contenant la description des colonnes des fichiers CoulAgri_priorisation.zip et CoulAgri_coulees.zip.  
 
@@ -28,9 +30,11 @@ The study region is the South of Quebec.
 
 Here is a short description of the different files:
 
-**CoulAgri_coulees.shp** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
+**CoulAgri_coulees.gpkg** : Delimitation of *coulées agricoles*. Contains unique identifier, surface area, slope, soil characteristics, and vegetation cover. *Coulées agricoles* are defined as wastelands in agriculturally zoned areas, featuring a non-linear shape, with an average slope exceeding 15% and a minimum of 0.15 ha of low vegetation. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
 
-**CoulAgri_priorisation.shp** : Prioritization results. The different criteria used in the prioritization are described in the Metadata.pdf file. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
+**CoulAgri_priorisation.gpkg** : Prioritization results. The different criteria used in the prioritization are described in the Metadata.pdf file. This dataset was also subdivided by regional municipal county. Data are available in the *MRC_donnees* folder. 
+
+**Plantations_DLF.gpkg** : Delimitation of the plantations carried out by Demain la Forêt, as well as the benefits associated with these plantations 
 
 **Metadonnees.pdf** : Pdf containing column descriptions for CoulAgri_priorisation.zip and CoulAgri_coulees.zip.
 
